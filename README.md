@@ -12,7 +12,8 @@
 # Outputs
 * The plot of 3 successive set difference is compared in a same plot. 
 * The pattern proves that even for n number of successive difference iterations, the Benford Conjucture still holds true, provided we have a large dataset (i.e, More number of terms)
-* Below is the example of a sample plot for **NUMBER OF TERMS = 1000** 
+## Below is the example of a sample plot for **NUMBER OF TERMS = 5000** 
+![sample_output](sample_output.png)
 
 
 # Benfords Law and its probability distribution reference
