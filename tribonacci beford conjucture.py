@@ -100,5 +100,7 @@ plt.legend(["Initial stage","First difference set","Second difference set"])
 plt.show()
 plt.savefig("output.jpg")
 
+print("Your Plot is stored as 'output.png' in the parent directory")
+
 
 
