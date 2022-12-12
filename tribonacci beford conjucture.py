@@ -95,12 +95,12 @@ plt.bar(X_axis + 0.2, ylsd2, 0.2)
 plt.xticks(X_axis,X)
 plt.xlabel("Seed values")
 plt.ylabel("Percentage of seed value")
-plt.title("Benford's law and tribonacci")
+plt.title("Benford's law and tribonacci for " + str(n)+ " terms" )
 plt.legend(["Initial stage","First difference set","Second difference set"])
 plt.show()
 plt.savefig("output.jpg")
 
-print("Your Plot is stored as 'output.png' in the parent directory")
+print("Your Plot is stored as 'output.jpg' in the parent directory")
 
 
 
