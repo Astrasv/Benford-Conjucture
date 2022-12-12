@@ -98,5 +98,7 @@ plt.ylabel("Percentage of seed value")
 plt.title("Benford's law and tribonacci")
 plt.legend(["Initial stage","First difference set","Second difference set"])
 plt.show()
+plt.savefig("output.jpg")
+
 
 
