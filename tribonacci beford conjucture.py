@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import seaborn as sns
 
 def diff(a,b):
     for i in range (2,len(b)):
@@ -82,6 +83,10 @@ percval(nlsd1,ls2)
 percval(nlsd2,ls3)
 
 #Bar graph plotting
+fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(15, 8))
+plt.subplot(121)
+
+
 X=['1','2','3','4','5','6','7','8','9']
 yelem = ls1
 ylsd = ls2
@@ -91,16 +96,28 @@ X_axis = np.arange(len(X))
 plt.bar(X_axis - 0.2 , yelem, 0.2)
 plt.bar(X_axis , ylsd, 0.2)
 plt.bar(X_axis + 0.2, ylsd2, 0.2)
-  
+
+
+ 
 plt.xticks(X_axis,X)
 plt.xlabel("Seed values")
 plt.ylabel("Percentage of seed value")
-plt.title("Benford's law and tribonacci for " + str(n)+ " terms" )
-plt.legend(["Initial stage","First difference set","Second difference set"])
-plt.show()
+plt.title("Benford's law and tribonacci",fontsize = 10)
+plt.legend(["Initial stage","First difference set","Second difference set"], fontsize=15)
 plt.savefig("output.jpg")
 
+plt.subplot(122) 
+seed = []
+for i in strlsd0:
+    seed.append(int(i[0]))
+
+
+
+sns.distplot(seed)
+plt.ylabel("Probability Distribution")
+plt.xlabel("Seed values")
+plt.title("Probability Distribution of seed values", fontsize=10)
+plt.show()
+
 print("Your Plot is stored as 'output.jpg' in the parent directory")
-
-
 
